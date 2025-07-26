@@ -105,9 +105,7 @@ AI_Cafe_Bot/
 ```
 
 
-### 👤 Author
+### 👤 Authors
 
-**Omer (omrzgit)**
-**Ali (AKM-13)**
-GitHub: [omrzgit](https://github.com/omrzgit)
-GitHub: [AKM-13](https://github.com/AKM-13)
+**Omer ([omrzgit](https://github.com/omrzgit))**
+**Ali ([AKM-13](https://github.com/AKM-13))**
