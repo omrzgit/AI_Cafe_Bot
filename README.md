@@ -1,18 +1,18 @@
-# 🚀 AI Café Bot
+# AI Café Bot
 
 Just a quick spin using flask, a simple python based AI assistant for café environments, answering menu queries, taking orders, and more.
 
 ---
 
-### 🧰 Features
+### Features
 
-* ☕ AI‐powered café conversations
+* AI‐powered café conversations
 * menu browsing, order simulation
 * dmin features & analytics
 
 ---
 
-### 📁 Project Setup
+### Project Setup
 
 1. **Clone the repo**
 
@@ -36,7 +36,7 @@ Just a quick spin using flask, a simple python based AI assistant for café envi
 
 ---
 
-### 🔧 Configuration
+### Configuration
 
 Create a `.env` file or set environment variables:
 
@@ -49,7 +49,7 @@ API_KEY=your_api_key
 
 ---
 
-### 🚀 Usage
+### Usage
 
 Run locally:
 
@@ -63,7 +63,7 @@ Visit `http://localhost:5000/` in your browser to interact with the app.
 
 ---
 
-### 🌍 Deployment (Render.com)
+### Deployment (Render.com)
 
 To deploy continuously via GitHub:
 
@@ -83,7 +83,7 @@ To deploy continuously via GitHub:
 
 ---
 
-### 🧪 Tests
+### Tests
 
 If tests exist:
 
@@ -93,7 +93,7 @@ pytest
 
 ---
 
-### 📂 Project Structure
+### Project Structure
 
 ```
 AI_Cafe_Bot/
@@ -105,7 +105,7 @@ AI_Cafe_Bot/
 ```
 
 
-### 👤 Authors
+### Authors
 
 **Omer ([omrzgit](https://github.com/omrzgit))**
 **Ali ([AKM-13](https://github.com/AKM-13))**
