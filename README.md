@@ -192,6 +192,37 @@ AI_Cafe_Bot/
 
 ---
 
+## 🌐 Deploying to Vercel
+
+This repository is pre-configured for zero-config deployment on **[Vercel](https://vercel.com)** supporting both the **Next.js Frontend** and the **Python FastAPI Serverless Backend**:
+
+### Method 1 — Deploy via Vercel Dashboard (Recommended)
+
+1. Push your changes to GitHub.
+2. Go to [vercel.com/new](https://vercel.com/new) and import your `AI_Cafe_Bot` repository.
+3. Keep the Root Directory as `./` (the repository root contains [`vercel.json`](file:///D:/Omer/Installments/Related%20to%20.bat/LAB/AI%20Appointment%20Booking%20Chatbot/AI_Cafe_Bot/vercel.json)).
+4. Under **Environment Variables**, add:
+   - `GROQ_API_KEY` (or `GEMINI_API_KEY`)
+   - `COMPANY_NAME` = `Fireball Cafe & Bistro`
+   - `LLM_MODEL` = `llama-3.3-70b-versatile`
+   - *(Optional)* `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GOOGLE_REFRESH_TOKEN`
+5. Click **Deploy**. Vercel will automatically build the Next.js frontend and deploy the Python Serverless APIs.
+
+### Method 2 — Deploy via Vercel CLI
+
+```bash
+# Install Vercel CLI
+npm install -g vercel
+
+# Deploy to preview
+vercel
+
+# Deploy to production
+vercel --prod
+```
+
+---
+
 ## 📅 Google Calendar & Meet Integration (Optional)
 
 To enable automatic Google Calendar event creation and Google Meet link generation:
