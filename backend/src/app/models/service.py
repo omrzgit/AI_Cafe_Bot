@@ -18,9 +18,9 @@ class Service(Base):
 
     def to_dict(self):
         return {
-            "id": self.id,
+            "id": self.id or str(uuid.uuid4()),
             "name": self.name,
             "description": self.description,
             "duration_minutes": self.duration_minutes,
-            "is_active": self.is_active,
+            "is_active": True if self.is_active is None else bool(self.is_active),
         }

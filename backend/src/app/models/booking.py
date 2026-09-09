@@ -23,17 +23,20 @@ class Booking(Base):
     service: Mapped["Service"] = relationship("Service", back_populates="bookings")
 
     def to_dict(self):
+        created_str = self.created_at.isoformat() if self.created_at else datetime.utcnow().isoformat()
+        date_str = self.appointment_date.isoformat() if hasattr(self.appointment_date, "isoformat") else str(self.appointment_date)
+        time_str = self.appointment_time.strftime("%H:%M") if hasattr(self.appointment_time, "strftime") else str(self.appointment_time)[:5]
         return {
-            "id": self.id,
+            "id": self.id or str(uuid.uuid4()),
             "service_id": self.service_id,
             "service_name": self.service.name if self.service else None,
             "customer_name": self.customer_name,
             "customer_email": self.customer_email,
-            "appointment_date": self.appointment_date.isoformat(),
-            "appointment_time": self.appointment_time.strftime("%H:%M"),
-            "status": self.status,
+            "appointment_date": date_str,
+            "appointment_time": time_str,
+            "status": self.status or "pending",
             "calendar_event_id": self.calendar_event_id,
             "meet_link": self.meet_link,
             "notes": self.notes,
-            "created_at": self.created_at.isoformat(),
+            "created_at": created_str,
         }
