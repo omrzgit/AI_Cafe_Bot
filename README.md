@@ -278,4 +278,3 @@ python tests/test_backend.py
 
 - **Omer ([@omrzgit](https://github.com/omrzgit))**
 - **Ali ([@AKM-13](https://github.com/AKM-13))**
-- Reference architecture inspired by **[AI-Appointment-Booking-assistant](https://github.com/Rajatkpaliwal/AI-Appointment-Booking-assistant)** (used with permission).
