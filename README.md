@@ -1,4 +1,4 @@
-# 🍔 AI Café & Appointment Booking Assistant 📅
+# AI Café & Appointment Booking Assistant 📅
 
 An enterprise-grade, full-stack AI chatbot and appointment reservation platform combining **Next.js 15**, **FastAPI**, **LangGraph**, and **Google Calendar**. 
 
@@ -6,7 +6,7 @@ Customers can seamlessly browse the café menu, order food with real-time cart t
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
 ### 🍔 1. AI Café Ordering & Menu Browsing
 * **Natural Language Ordering**: Order food items in plain English (e.g., *"I'd like 2 Cheese Burgers and large fries"*).
